@@ -47,7 +47,9 @@ if input_method == "Home Page":
         st.subheader("Severly High")
         st.write("Target are very far away , p1, p2, p3, p4")
 
-
+st.header("Make sure to use a dataset having columns of the following type:")
+df = pd.read_csv("final_df.csv")
+st.write(df.head())
 if input_method == "Upload CSV File":
     # File uploader widget
     uploaded_file = st.file_uploader("Upload a CSV file", type="csv")
