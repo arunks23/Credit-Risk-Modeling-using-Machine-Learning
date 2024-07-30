@@ -75,10 +75,10 @@ if input_method == "Upload CSV File":
             for i in data['predictions']:
                 if i == 0:
                     data['predictions'] = data['predictions'].replace(i,'p1')
-                elif i == 2:
+                elif i == 1:
                     data['predictions'] = data['predictions'].replace(i,'p2')
-                elif i == 3:
+                elif i == 2:
                     data['predictions'] = data['predictions'].replace(i,'p3')
-                elif i == 4:
+                elif i == 3:
                     data['predictions'] = data['predictions'].replace(i,'p4')
             st.write(data)
